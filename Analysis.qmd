@@ -1,0 +1,34 @@
+---
+title: "Data Analysis"                    
+author: "Dr. Muhammad Saufi"              
+date: 14 August 2024                      
+format: 
+  docx:
+    toc: true
+    toc-title: Contents
+    number-sections: true
+editor: visual
+---
+
+# Setting the Environment                          
+## Loading the Packages                            
+
+```{r}                                             
+# Load the packages into R session                 
+library(tidyverse)                                 
+```                                                
+
+# Dataset                                          
+## Reading the Dataset                             
+                                                   
+```{r}                                             
+# Import the dataset into workspace                
+penguins <- read_csv("Datasets/penguins.csv")      
+```                                                
+
+## Exploring the Dataset                           
+
+```{r}                                             
+# Get a quick overview of dataset                  
+glimpse(penguins)                                  
+```                                                
