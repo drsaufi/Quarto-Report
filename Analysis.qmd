@@ -31,4 +31,15 @@ penguins <- read_csv("Datasets/penguins.csv")
 ```{r}                                             
 # Get a quick overview of dataset                  
 glimpse(penguins)                                  
-```                                                
+```
+
+## Visualize the Dataset
+
+ggplot(                                   
+  data = penguins,                        
+  mapping = aes(                          
+             x = flipper_length_mm,       
+             y = body_mass_g,             
+             color = species)             
+) +                                       
+  geom_point()
