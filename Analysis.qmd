@@ -2,11 +2,20 @@
 title: "Data Analysis"                    
 author: "Dr. Muhammad Saufi"              
 date: 14 August 2024                      
-format: 
-  docx:
-    toc: true
-    toc-title: Contents
-    number-sections: true
+format:                                   
+  html:                                   
+    toc: true                             
+    toc-title: Contents                   
+    toc-location: left                    
+    toc-depth: 3                          
+    toc-expand: 1                         
+    number-sections: true                 
+    code-fold: true                       
+    code-summary: "Show the Code"         
+    theme:                                
+      light: united                       
+      dark: cyborg                        
+    embed-resources: true                 
 editor: visual
 ---
 
@@ -35,6 +44,7 @@ glimpse(penguins)
 
 ## Visualize the Dataset
 
+```{r}                                             
 ggplot(                                   
   data = penguins,                        
   mapping = aes(                          
@@ -43,3 +53,4 @@ ggplot(
              color = species)             
 ) +                                       
   geom_point()
+```
